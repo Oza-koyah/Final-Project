@@ -1,1 +1,99 @@
-Data science final project report
+Customer Churn Classification for a Telecom Company
+Data Analysis Report
+After carefully exploring the “telecom customer churn” dataset using Jupyter Notebook, the following points were observed:
+The dataset comprises of 7043 rows and 21 columns
+No missing value was found
+No duplicated value was found
+The dataset are of three types which are integers, floats and objects
+The Senior Citizen and Tenure columns are integers
+The monthly Charges column contains floats character.
+The remaining 18 columns contains object.
+The table below gives the unique numbers of each column in the dataset:
+Name of column
+Unique number
+
+customerID
+7043
+
+Gender
+2
+
+SeniorCitizen
+2
+
+Partner
+2
+
+Dependents
+2
+
+Tenure
+73
+
+PhoneService
+2
+
+MultipleLines
+3
+
+InternetService
+3
+
+OnlineSecurity
+3
+
+OnlineBackup
+3
+
+DeviceProtection
+3
+
+TechSupport
+3
+
+StreamingTV
+3
+
+StreamingMovies
+3
+
+Contract
+3
+
+PaperlessBilling
+2
+
+PaymentMethod
+4
+
+MonthlyCharges
+1585
+
+TotalCharges
+6531
+
+Churn
+2
+
+
+
+Data Visualization
+Out of the 7043 customers, 5174 still patronizes the Telecom Company while 1869 stopped patronizing the company’s services. The figure below illustrates customers that churned.
+
+
+The figure below gives the correlation between variables. 0.017 and 1.0 are the least and highest correlation value respectively.
+
+The figure below gives us the pictorial view of the confusion matrix between the features and the target variable (Churn).
+
+Classification Model Report
+The column “Churn”, containg string “Yes” and “No” was changed to “tele_churn” which contains the integers 0 and 1. 0 represents No while 1 represents Yes. Logistic Regression Model was used to predict customer churn. SeniorCitizen, tenurn and tele_churn were used to analyze the model. 
+The model was evaluated and following information was gotten:
+An accuracy score of 1.0 was obtained.
+A precision score of 1.0 was obtained.
+A recall score of 1.0 was obtained.
+An F1 score of 1.0 was obtained.
+
+Final Report
+Problem statement: for telecom business, Telecom Churn is an issue because acquiring a fresh client is costly and the main motive of business is to maintain their current clients. Most telecom companies suffer from voluntary churn. 
+Conclusion: With machine learning and deep analysis for customer churn prediction, Telecommunication companies will be able to increase customer retention rate, save up on retention cost and even protect the future revenue from churning users.
+Recommendation: Telecom companies should adapt the use of machine learning and deep analysis for customer churn prediction. This will help telecom companies forecast customers that are likely to churn, hence organize a special promotion/marketing campaign targeted towards such customers.
